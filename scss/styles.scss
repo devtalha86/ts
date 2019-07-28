@@ -1,0 +1,871 @@
+@import 'variables','fonts','icons';
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.ts-container{
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
+.ts-profile{
+  display: block;
+  padding-top: 1.5rem;
+  &:hover{
+    cursor: pointer;
+  }
+  .profile-img{
+    display: block;
+    float: left;
+    img{
+      width: 65px;
+      height: 65px;
+      border: 3px solid #fff;
+      border-radius: 100px;
+      box-shadow: 2px 3px 2px 0 #d2d2d2;
+    }
+  }
+  .profile-info{
+    display: block;
+    float: left;
+    padding: 15px 0 0 20px;
+    h4{
+      font-size: 18px;
+      color: #000;
+      margin: 0;
+    }
+    span{
+      font-size: 14px;
+      color: #838383;
+    }
+  }
+  .profile-info-popover{
+    display: none;
+  }
+  &:hover .profile-info-popover{
+    position: absolute;
+    top: 110px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    font-size: 12px;
+    display: block;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 13px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 13px -5px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 5px -5px rgba(0,0,0,0.5);
+
+    animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s; /* Firefox */
+    -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+    -o-animation: fadein 0.5s; /* Opera */
+    &:before{
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #f0f0f0;
+      border-top: 1px solid #bfbfbf;
+      border-right: 0px solid #bfbfbf;
+      border-bottom: 0px solid #bfbfbf;
+      border-left: 1px solid #bfbfbf;
+      top: -11px;
+      left: 50%;
+      margin-left: -15px;
+      content: '';
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.ts-newTicket{
+  display: block;
+  padding-top: 2.2rem;
+
+  @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+    transition: $property $duration $ease;
+  }
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    &.learn-more {
+      width: 12rem;
+      height: auto;
+      .circle {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: relative;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #00a4ef;
+        border-radius: 1.625rem;
+        .icon {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: #fff;
+          &.arrow {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none;
+            &::before {
+              position: absolute;
+              content: '';
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid #fff;
+              border-right: 0.125rem solid #fff;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+      .button-text {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.6rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #000;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #00a4ef;
+        border-left: none;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+    }
+    &:hover {
+      .circle {
+        width: 100%;
+        .icon {
+          &.arrow {
+          background: #fff;
+          transform: translate(1rem, 0);
+          }
+        }
+      }
+      .button-text {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.ts-ticketMenu{
+  display: block;
+  padding-top: 2rem;
+  ul{
+    padding: 0;
+    margin: 0;
+    transform: rotate(-180deg);
+    float: right;
+    li{
+      margin: 0 5px 0 0;
+      padding: 0 30px 0 0;
+      list-style-type: none;
+      display: inline;
+      float: right;
+      transform: rotate(-180deg);
+
+      &:hover, &.active{
+        cursor: pointer;
+        .ts-catIcon{
+          background-color: #82b541;
+          transition: ease 0.3s;
+          span{
+            color: #fff;
+            transition: ease 0.3s;
+          }
+        }
+        .ts-catName{
+          span:first-child{
+            color: #00a4ef;
+            transition: ease 0.3s;
+          }
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+        padding-right: 0;
+      }
+      .ts-catIcon{
+        background-color: #e6e6e6;
+        transition: ease 0.3s;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        float: left;
+        padding: 7px 0 0 8px;
+        span{
+          font-size: 45px;
+        }
+      }
+      .ts-catName{
+        float: left;
+        padding-left: 15px;
+        margin-top: -8px;
+        span:first-child{
+          font-size: 40px;
+          font-weight: 600;
+          display: block;
+        }
+        span:last-child{
+          font-size: 14px;
+          font-weight: normal;
+          margin-top: -10px;
+          display: block;
+          color: #838383;
+        }
+      }
+    }
+  }
+  
+}
+
+.ts-ticket-search{
+  position: relative;
+  margin: 40px 0 15px 0;
+  input[type=text]{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 5px 15px 5px 35px;
+    outline: none;
+    width: 100%;
+  }
+  span.lodur-icon-search{
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-size: 20px;
+    color: #000000;
+  }
+}
+
+//Data table styles
+
+.ts-ticket-list{
+  font-size: 14px;
+  thead tr th img{
+    margin-top: -3px;
+  }
+  td,th{
+    padding: 8px;
+  }
+  th:first-child{
+    width: 100px;
+    text-align: center;
+    padding-right: 40px;
+  }
+  th:last-child{
+    width: 130px;
+  }
+  th:last-child, th:nth-child(3){
+    text-align: center;
+  }
+  td:last-child, td:nth-child(3){
+    text-align: center;
+  }
+  .ts-statBtn{
+    padding: 3px 6px;
+    width: 80px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
+// Thread styles start
+
+.ts-ticket-filter{
+  select{
+    border: none;
+    background-color: white;
+    border-bottom: 1px solid #d8dcde;
+    border-top: 1px solid #d8dcde;
+    padding: 5px 0 8px 0;
+    color: #000;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      margin: 0;
+      padding: 5px 10px;
+      list-style-type: none;
+      display: flex;
+      &:hover{
+        background-color: #f0f0f0;
+        transition: ease 0.25s;
+        cursor: pointer;
+      }
+      span.ticketStat{
+        border-radius: 3px;
+        height: 15px;
+        text-align: center;
+        line-height: 14px;
+        width: 15px;
+        display: inline-block;
+        font-size: 12px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        margin-top: 3px;
+        color: #fff;
+      }
+      span.ticketName{
+        font-size: 14px;
+        font-weight: normal;
+        color: #000;
+        display: block;
+      }
+      span.ticketMeta{
+        font-size: 12px;
+        font-weight: normal;
+        color: #838383;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.green{
+  background-color: #82b541;
+}
+.orange{
+  background-color: #fd8308;
+}
+.red{
+  background-color: #ff0000;
+}
+.blue{
+  background-color: #009cff;
+}
+
+
+.ts-answer-container{
+  .ticket-title{
+    display: flex;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 8px 0.6px;
+    background-repeat: repeat-x;
+    .ts-catIcon{
+      background-color: #e6e6e6;
+      transition: ease 0.3s;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      float: left;
+      padding: 7px 0 0 8px;
+      span{
+        font-size: 45px;
+      }
+    }
+    .ts-ticketName{
+      float: left;
+      padding-left: 15px;
+      padding-top: 16px;
+      h1{
+        font-size: 18px;
+        line-height: 5px;
+      }
+      span.ticketMeta{
+        font-size: 12px;
+        font-weight: normal;
+        color: #838383;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+$GREY: #CCC;
+$BACKGROUND_GREY: lighten(#EEEDED, 2.5%);
+$SUBTLE_GREY: #F2F2F2;
+$MURKY_GREY: #384148;
+$DARK_GREY: #333;
+
+$WHITE: #FFF;
+$SUBTLE_WHITE: #F9F9F9;
+
+$BLUE: #6495ED;
+$RED: #FF6347;
+
+
+
+.user_avatar {
+	width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 10px;
+	display: inline-block;
+	vertical-align: middle;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.ticket-thread {
+  display: block;	
+  .create_new_comment {
+		width: 100%;
+		padding: 20px 0;
+		.input_comment {
+      display: flex;
+      float: left;
+			vertical-align: middle;
+			margin-left: 10px;
+      width: calc(100% - 50px);
+      padding-top: 10px;
+      ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        position: absolute;
+        right: 16px;
+        li{
+          display: inline-block;
+          list-style-type: none;
+          margin-right: 5px;
+          a{
+            display: block;
+            padding: 6px 10px;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            color: #009cff;
+            &:hover{
+              color: #000;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+			.ts-comment-field {
+				width: 100%;
+				font-weight: 300;
+				padding: 10px 10px 50px 10px;
+				border: none;
+				border: 2px solid #f2f2f2;
+				&:focus {
+					outline: none;
+					border: 2px solid #e6e6e6;
+				}
+			}
+		}
+  }
+  .create_new_comment{
+    .new_comment_btn{
+      margin-top: 10px;
+      display: inline-block;
+      padding-left: 50px;
+      button.lodurMobile-Btn--blue{
+        background-color: #0d9ed6;
+        border-color: #0d9ed6;
+        padding: 5px 15px;
+        font-size: 14px;
+        &:hover{
+          background-color: #009cff;
+        }
+      }
+    }
+  }
+
+	.new_comment {
+		width: 100%;
+		height: auto;
+		padding: 20px 0;
+		border-top: 1px solid lighten($GREY, 10%);
+		.user_comment {
+      list-style-type: none;
+      padding-left:0;
+		}
+
+		.comment_body {
+			display: inline-block;
+			vertical-align: middle;
+			width: calc(100% - 75px);
+      min-height: 65px;
+			margin-left: 20px;
+			padding: 5px 10px 10px 0;
+			font-size: .9rem;
+			color: #555;
+			background-color: $WHITE;
+      border-bottom: 2px solid lighten($GREY, 15%);
+      .commenterName{
+        display: block;
+        a{
+          color: #0d9ed6;
+          font-weight: 600;
+          &:hover{
+            color: #555;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+			.replied_to {
+				margin: 5px 0px 10px 0px;
+				background-color: #f2f2f2;
+				border-bottom: 2px solid lighten($GREY, 15%);
+				border-radius: 5px;
+				p {
+					padding: 5px 10px;
+				}
+				span {
+          color: #555;
+          font-weight: 600;
+          margin-right: 5px;
+				}
+			}
+		}
+
+		.comment_toolbar {
+      width: 100%;
+      margin-bottom: 5px;
+			ul {
+				list-style-type: none;
+				padding: 0;
+				font-size: 0;
+				li {
+					display: inline-block;
+					padding: 5px 10px 5px 0;
+					font-size: 12px;
+					color: #838383;
+					&:hover {
+						cursor: pointer; 
+					}
+				}
+			}
+			.comment_details {
+				display: inline-block;
+				vertical-align: middle;
+				width: 70%;
+				text-align: left;
+			}
+			.comment_tools {
+				display: inline-block;
+				vertical-align: middle;
+				width: 30%;
+				text-align: right;
+				li {
+					&:hover {
+						color: $GREY;
+					}
+				}
+			}
+		}
+
+		.user {
+			&:hover {
+				color: $BLUE;
+				text-decoration: underline;
+				}
+			}
+		.love {
+			&:hover {
+				color: $RED;
+			}
+		}
+	}
+}
+
+.ts-modal{
+  max-width: 700px;
+  .modal-header{
+    background-color: #0d9ed6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    .close{
+      text-shadow: none;
+      opacity: 1;
+      color: #fff;
+    }
+  }
+  .newTicketInfo{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    input.ts-ticket-subject{
+      width: 70%;
+      border: 2px solid #f2f2f2;
+      padding: 5px 10px;
+      font-weight: 300;
+      &:focus{
+        border: 2px solid #e6e6e6;
+        outline: none;
+      }
+    }
+    select.ts-ticket-priority{
+      border: 2px solid #f2f2f2;
+      width: 29.2899999999999%;
+      padding: 5px 10px;
+      font-weight: 300;
+      &:focus{
+        border: 2px solid #e6e6e6;
+        outline: none;
+      }
+    }
+  }
+  .create_new_comment{
+    .input_comment{
+      flex-flow: wrap;
+      ul{
+        position: inherit;
+      }
+    }
+  }  
+}
+
+
+
+.ts-rating-feedback{
+
+  
+
+.rating{
+  width: 265px;
+  margin: 135px auto 0;
+  position: relative;
+  direction: rtl;
+  text-align: center;
+  
+  .emo{
+    position: absolute;
+    font-family: $lodur-minimalistic-font-family;
+    color: #0d9ed6;
+    font-size: 100px;
+    bottom: 100%;
+    left: 34%;
+    display: inline-block;
+    direction: ltr;
+    &:after {
+         content: '\3c';
+        }
+  }
+  
+  input{
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 5;
+    margin-right: -35px;
+    top: 10px;
+    
+
+    &:nth-of-type(4), &:nth-of-type(3) {
+      &:checked ~ .emo:after, &:hover ~ .emo:after{
+        content: '\3b';
+       }
+   }
+    
+    &:nth-of-type(2) {
+       &:checked ~ .emo:after, &:hover ~ .emo:after{
+         content: '\e955';
+        }
+    }
+
+    &:nth-of-type(1){
+      &:checked ~ .emo:after, &:hover ~ .emo:after{
+        content: '\3a';
+       }
+   }
+    
+    @for $i from 1 through 6 {
+      &:nth-of-type(#{$i}) {
+        right:  #{$i * 50px};
+      }
+    }
+      &:checked ~ .star:after, &:hover ~ .star:after{
+         content: '\e953';
+        }
+  }
+  .star{
+      display: inline-block;
+      font-family: $lodur-minimalistic-font-family;
+      font-size: 42px;
+      color: #FBB202;
+      cursor: pointer;
+      margin: 3px;
+      &:after { content: '\e954';}
+    
+      &:hover{
+       & ~ .star:after ,&:after {
+         content: '\e953';
+        }        
+      }
+  }
+}
+  
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1120px) {
+
+  .ts-newTicket button.learn-more{
+    width: 9.5rem;
+  }
+
+  .ts-newTicket button.learn-more .button-text{
+    font-size: 14px;
+  }
+  
+  .ts-ticketMenu{
+    ul{
+      li{
+        padding:  0 20px 0 0;
+        .ts-catIcon{
+          height: 55px;
+          width: 55px;
+          padding: 6px 0 0 7px;
+          span{
+            font-size: 42px;
+          }
+        }
+        .ts-catName{
+          padding-left: 10px;
+          padding-top: 4px; 
+          span{
+            &:first-child{
+              font-size: 32px;
+            }
+            &:last-child{
+              font-size: 12px;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}

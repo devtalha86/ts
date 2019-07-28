@@ -1,0 +1,1387 @@
+@charset "UTF-8";
+/*--------------------
+Lodur Icons
+--------------------*/
+/*--------------------
+General styles
+--------------------*/
+@font-face {
+  font-family: 'Dax-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Italic"), url("../assets/font/dax-italic-5872e0c289d8d.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Light"), url("../assets/font/dax-light-5872dfb3692b0.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Medium"), url("../assets/font/dax-medium-5872e00270bc1.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-MediumItalic"), url("../assets/font/dax-mediumitalic-5872e0e8d95e8.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Bold"), url("../assets/font/dax-bold-5872e03df1718.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-ExtraBold"), url("../assets/font/dax-extrabold-5872df5c91c89.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Dax-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Dax-Regular"), url("../assets/font/ufonts.com_dax-regular.woff") format("woff"); }
+
+/*--------------------
+Lodur Icons
+--------------------*/
+/*--------------------
+General styles
+--------------------*/
+@font-face {
+  font-family: "lodur-minimalistic-icons";
+  src: url("../assets/icon/lodur-minimalistic-icons.eot?wgrw60");
+  src: url("../assets/icon/lodur-minimalistic-icons.eot?wgrw60#iefix") format("embedded-opentype"), url("../assets/icon/lodur-minimalistic-icons.ttf?wgrw60") format("truetype"), url("../assets/icon/lodur-minimalistic-icons.woff?wgrw60") format("woff"), url("../assets/icon/lodur-minimalistic-icons.svg?wgrw60#lodur-minimalistic-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="lodur-icon-"], [class*=" lodur-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "lodur-minimalistic-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.lodur-icon-athlete-1:before {
+  content: "a"; }
+
+.lodur-icon-chevron-up:before {
+  content: "b"; }
+
+.lodur-icon-dollar:before {
+  content: "c"; }
+
+.lodur-icon-list-ordered:before {
+  content: "d"; }
+
+.lodur-icon-bin:before {
+  content: "e"; }
+
+.lodur-icon-chat:before {
+  content: "f"; }
+
+.lodur-icon-more:before {
+  content: "g"; }
+
+.lodur-icon-minus2:before {
+  content: "h"; }
+
+.lodur-icon-alert:before {
+  content: "i"; }
+
+.lodur-icon-arrow-small-down:before {
+  content: "j"; }
+
+.lodur-icon-close2:before {
+  content: "k"; }
+
+.lodur-icon-list:before {
+  content: "l"; }
+
+.lodur-icon-three-bars:before {
+  content: "m"; }
+
+.lodur-icon-mail-read:before {
+  content: "n"; }
+
+.lodur-icon-arrow-small-up:before {
+  content: "o"; }
+
+.lodur-icon-arrow-small-left:before {
+  content: "p"; }
+
+.lodur-icon-arrow-small-right:before {
+  content: "q"; }
+
+.lodur-icon-mail:before {
+  content: "r"; }
+
+.lodur-icon-less:before {
+  content: "s"; }
+
+.lodur-icon-note:before {
+  content: "t"; }
+
+.lodur-icon-heart:before {
+  content: "u"; }
+
+.lodur-icon-arrow-up:before {
+  content: "v"; }
+
+.lodur-icon-arrow-right:before {
+  content: "w"; }
+
+.lodur-icon-flag:before {
+  content: "x"; }
+
+.lodur-icon-user-contact:before {
+  content: "y"; }
+
+.lodur-icon-settings:before {
+  content: "z"; }
+
+.lodur-icon-filter:before {
+  content: "A"; }
+
+.lodur-icon-arrow-left:before {
+  content: "B"; }
+
+.lodur-icon-arrow-down:before {
+  content: "C"; }
+
+.lodur-icon-edit:before {
+  content: "D"; }
+
+.lodur-icon-eye:before {
+  content: "E"; }
+
+.lodur-icon-add:before {
+  content: "F"; }
+
+.lodur-icon-star:before {
+  content: "G"; }
+
+.lodur-icon-check:before {
+  content: "H"; }
+
+.lodur-icon-chevron-down:before {
+  content: "I"; }
+
+.lodur-icon-zoom-in:before {
+  content: "J"; }
+
+.lodur-icon-minus:before {
+  content: "K"; }
+
+.lodur-icon-search:before {
+  content: "L"; }
+
+.lodur-icon-zoom-out:before {
+  content: "M"; }
+
+.lodur-icon-chevron-left:before {
+  content: "N"; }
+
+.lodur-icon-chevron-right:before {
+  content: "O"; }
+
+.lodur-icon-alarm:before {
+  content: "P"; }
+
+.lodur-icon-calendar:before {
+  content: "Q"; }
+
+.lodur-icon-user:before {
+  content: "R"; }
+
+.lodur-icon-print:before {
+  content: "S"; }
+
+.lodur-icon-edit-contact:before {
+  content: "T"; }
+
+.lodur-icon-import:before {
+  content: "U"; }
+
+.lodur-icon-comment:before {
+  content: "V"; }
+
+.lodur-icon-archive:before {
+  content: "W"; }
+
+.lodur-icon-unarchive:before {
+  content: "X"; }
+
+.lodur-icon-center-on:before {
+  content: "Y"; }
+
+.lodur-icon-zoom-to:before {
+  content: "Z"; }
+
+.lodur-icon-excel:before {
+  content: "0"; }
+
+.lodur-icon-user-info:before {
+  content: "1"; }
+
+.lodur-icon-data-grid:before {
+  content: "3"; }
+
+.lodur-icon-device-mobile:before {
+  content: "2"; }
+
+.lodur-icon-close-round:before {
+  content: "4"; }
+
+.lodur-icon-check-round:before {
+  content: "5"; }
+
+.lodur-icon-bin-open:before {
+  content: "6"; }
+
+.lodur-icon-move-to:before {
+  content: "7"; }
+
+.lodur-icon-d-selected:before {
+  content: "8"; }
+
+.lodur-icon-d-deselected:before {
+  content: "9"; }
+
+.lodur-icon-f-deselected:before {
+  content: "!"; }
+
+.lodur-icon-f-selected:before {
+  content: '"'; }
+
+.lodur-icon-successful:before {
+  content: "#"; }
+
+.lodur-icon-male:before {
+  content: "$"; }
+
+.lodur-icon-female:before {
+  content: "%"; }
+
+.lodur-icon-exclam:before {
+  content: "&"; }
+
+.lodur-icon-compass:before {
+  content: "'"; }
+
+.lodur-icon-location:before {
+  content: "("; }
+
+.lodur-icon-search-performance:before {
+  content: ")"; }
+
+.lodur-icon-administrator:before {
+  content: "*"; }
+
+.lodur-icon-kommandant:before {
+  content: "+"; }
+
+.lodur-icon-central:before {
+  content: ","; }
+
+.lodur-icon-payment:before {
+  content: "-"; }
+
+.lodur-icon-attachment:before {
+  content: "."; }
+
+.lodur-icon-expand:before {
+  content: "/"; }
+
+.lodur-icon-smiley-happy:before {
+  content: ":"; }
+
+.lodur-icon-smiley-normal:before {
+  content: ";"; }
+
+.lodur-icon-smiley-sad:before {
+  content: "<"; }
+
+.lodur-icon-download:before {
+  content: "="; }
+
+.lodur-icon-upload:before {
+  content: ">"; }
+
+.lodur-icon-statistics:before {
+  content: "?"; }
+
+.lodur-icon-adressbook:before {
+  content: "@"; }
+
+.lodur-icon-axe-big:before {
+  content: "["; }
+
+.lodur-icon-dta:before {
+  content: "]"; }
+
+.lodur-icon-master-copy:before {
+  content: "^"; }
+
+.lodur-icon-alarm-ringing:before {
+  content: "_"; }
+
+.lodur-icon-partly-cloudy:before {
+  content: "`"; }
+
+.lodur-icon-subscribe:before {
+  content: "|"; }
+
+.lodur-icon-ics:before {
+  content: "}"; }
+
+.lodur-icon-csv:before {
+  content: "~"; }
+
+.lodur-icon-weather-partly-cloudy-day-icon:before {
+  content: "\\"; }
+
+.lodur-icon-bed:before {
+  content: ""; }
+
+.lodur-icon-save:before {
+  content: ""; }
+
+.lodur-icon-locked-form:before {
+  content: "{"; }
+
+.lodur-icon-inactive:before {
+  content: ""; }
+
+.lodur-icon-marker-a:before {
+  content: ""; }
+
+.lodur-icon-marker-b:before {
+  content: ""; }
+
+.lodur-icon-marker-c:before {
+  content: ""; }
+
+.lodur-icon-marker-d:before {
+  content: ""; }
+
+.lodur-icon-army:before {
+  content: ""; }
+
+.lodur-icon-workplace:before {
+  content: ""; }
+
+.lodur-icon-boat:before {
+  content: ""; }
+
+.lodur-icon-driver-license:before {
+  content: ""; }
+
+.lodur-icon-bank:before {
+  content: ""; }
+
+.lodur-icon-group:before {
+  content: ""; }
+
+.lodur-icon-zug:before {
+  content: ""; }
+
+.lodur-icon-funktion:before {
+  content: ""; }
+
+.lodur-icon-terminart:before {
+  content: ""; }
+
+.lodur-icon-medal:before {
+  content: ""; }
+
+.lodur-icon-rank:before {
+  content: ""; }
+
+.lodur-icon-absent:before {
+  content: ""; }
+
+.lodur-icon-roman-7:before {
+  content: ""; }
+
+.lodur-icon-equipment:before {
+  content: ""; }
+
+.lodur-icon-course:before {
+  content: ""; }
+
+.lodur-icon-my-location:before {
+  content: ""; }
+
+.lodur-icon-location-of-emergency:before {
+  content: ""; }
+
+.lodur-icon-location-of-fire-engine:before {
+  content: ""; }
+
+.lodur-icon-location-of-fire-fepot:before {
+  content: ""; }
+
+.lodur-icon-forklift-icon-01:before {
+  content: ""; }
+
+.lodur-icon-pdf:before {
+  content: ""; }
+
+.lodur-icon-move-left:before {
+  content: ""; }
+
+.lodur-icon-move-right:before {
+  content: ""; }
+
+.lodur-icon-hourglass:before {
+  content: ""; }
+
+.lodur-icon-event-sign-off:before {
+  content: ""; }
+
+.lodur-icon-event-sign-off-undo:before {
+  content: ""; }
+
+.lodur-icon-mobile-siren:before {
+  content: ""; }
+
+.lodur-icon-cal-empty:before {
+  content: ""; }
+
+.lodur-icon-cal-check:before {
+  content: ""; }
+
+.lodur-icon-cal-cross:before {
+  content: ""; }
+
+.lodur-icon-xml:before {
+  content: ""; }
+
+.lodur-icon-taf:before {
+  content: ""; }
+
+.lodur-icon-emergency:before {
+  content: ""; }
+
+.lodur-icon-course-1:before {
+  content: ""; }
+
+.lodur-icon-general-activities:before {
+  content: ""; }
+
+.lodur-icon-meeting:before {
+  content: ""; }
+
+.lodur-icon-practice:before {
+  content: ""; }
+
+.lodur-icon-grant-permission:before {
+  content: ""; }
+
+.lodur-icon-transfer:before {
+  content: ""; }
+
+.lodur-icon-folder-closed:before {
+  content: ""; }
+
+.lodur-icon-folder-open:before {
+  content: ""; }
+
+.lodur-icon-folder-withfile:before {
+  content: ""; }
+
+.lodur-icon-time:before {
+  content: ""; }
+
+.lodur-icon-nav-usermanual:before {
+  content: ""; }
+
+.lodur-icon-nav-notes:before {
+  content: ""; }
+
+.lodur-icon-nav-setting:before {
+  content: ""; }
+
+.lodur-icon-nav-home:before {
+  content: ""; }
+
+.lodur-icon-nav-logout:before {
+  content: ""; }
+
+.lodur-icon-nav-upward:before {
+  content: ""; }
+
+.lodur-icon-nav-support:before {
+  content: ""; }
+
+.lodur-icon-nav-modulelist:before {
+  content: ""; }
+
+.lodur-icon-nav-hotlinks:before {
+  content: ""; }
+
+.lodur-icon-nav-monitor:before {
+  content: ""; }
+
+.lodur-icon-lock:before {
+  content: ""; }
+
+.lodur-icon-mobile-view:before {
+  content: ""; }
+
+.lodur-icon-hand:before {
+  content: ""; }
+
+.lodur-icon-eraser:before {
+  content: ""; }
+
+.lodur-icon-pentagon:before {
+  content: ""; }
+
+.lodur-icon-list-view:before {
+  content: ""; }
+
+.lodur-icon-column-view:before {
+  content: ""; }
+
+.lodur-icon-grid-view:before {
+  content: ""; }
+
+.lodur-icon-alarm-groups:before {
+  content: ""; }
+
+.lodur-icon-cart:before {
+  content: ""; }
+
+.lodur-icon-alarm-group2:before {
+  content: ""; }
+
+.lodur-icon-pending:before {
+  content: ""; }
+
+.lodur-icon-reject:before {
+  content: ""; }
+
+.lodur-icon-unlock:before {
+  content: ""; }
+
+.lodur-icon-location-small:before {
+  content: ""; }
+
+.lodur-icon-arrow-circle-right:before {
+  content: ""; }
+
+.lodur-icon-arrow-circle-left:before {
+  content: ""; }
+
+.lodur-icon-period-end:before {
+  content: ""; }
+
+.lodur-icon-change-course:before {
+  content: ""; }
+
+.lodur-icon-attendance-checklist:before {
+  content: ""; }
+
+.lodur-icon-exam-feedback:before {
+  content: ""; }
+
+.lodur-icon-checklist:before {
+  content: ""; }
+
+.lodur-icon-pencil:before {
+  content: ""; }
+
+.lodur-icon-pause:before {
+  content: ""; }
+
+.lodur-icon-home:before {
+  content: ""; }
+
+.lodur-icon-gender-neutral:before {
+  content: ""; }
+
+.lodur-icon-attendance:before {
+  content: ""; }
+
+.lodur-icon-breathing-apparatus:before {
+  content: ""; }
+
+.lodur-icon-walkie-talkie:before {
+  content: ""; }
+
+.lodur-icon-suggestion:before {
+  content: ""; }
+
+.lodur-icon-antenna:before {
+  content: ""; }
+
+.lodur-icon-man-confirmed-alarm:before {
+  content: ""; }
+
+.lodur-icon-course-full:before {
+  content: ""; }
+
+.lodur-icon-emergency-plan:before {
+  content: ""; }
+
+.lodur-icon-route:before {
+  content: ""; }
+
+.lodur-icon-course-booked:before {
+  content: ""; }
+
+.lodur-icon-min-participants:before {
+  content: ""; }
+
+.lodur-icon-full:before {
+  content: ""; }
+
+.lodur-icon-instructor:before {
+  content: ""; }
+
+.lodur-icon-clock:before {
+  content: ""; }
+
+.lodur-icon-chevron-thin-right:before {
+  content: ""; }
+
+.lodur-icon-chevron-thin-left:before {
+  content: ""; }
+
+.lodur-icon-star-tag:before {
+  content: ""; }
+
+.lodur-icon-map-center:before {
+  content: ""; }
+
+.lodur-icon-north:before {
+  content: ""; }
+
+.lodur-icon-teacher-full:before {
+  content: ""; }
+
+.lodur-icon-teacher-not-enough:before {
+  content: ""; }
+
+.lodur-icon-100:before {
+  content: ""; }
+
+.lodur-icon-no:before {
+  content: ""; }
+
+.lodur-icon-camera:before {
+  content: ""; }
+
+.lodur-icon-link:before {
+  content: ""; }
+
+.lodur-icon-file:before {
+  content: ""; }
+
+.lodur-icon-ake:before {
+  content: ""; }
+
+.lodur-icon-shopping-bag:before {
+  content: ""; }
+
+.lodur-icon-person-present:before {
+  content: ""; }
+
+.lodur-icon-person-absent:before {
+  content: ""; }
+
+.lodur-icon-undo:before {
+  content: ""; }
+
+.lodur-icon-phone:before {
+  content: ""; }
+
+.lodur-icon-web:before {
+  content: ""; }
+
+.lodur-icon-database:before {
+  content: ""; }
+
+.lodur-icon-text-element:before {
+  content: ""; }
+
+.lodur-icon-microphone:before {
+  content: ""; }
+
+.lodur-icon-ticket-answered:before {
+  content: ""; }
+
+.lodur-icon-ticket-closed:before {
+  content: ""; }
+
+.lodur-icon-ticket-open:before {
+  content: ""; }
+
+.lodur-icon-ticket-pending:before {
+  content: ""; }
+
+.lodur-icon-reply:before {
+  content: ""; }
+
+.lodur-icon-star-fill:before {
+  content: ""; }
+
+.lodur-icon-star-outline:before {
+  content: ""; }
+
+.lodur-icon-smile:before {
+  content: ""; }
+
+html, body {
+  padding: 0;
+  margin: 0; }
+
+.ts-container {
+  max-width: 1450px;
+  margin: 0 auto; }
+
+.ts-profile {
+  display: block;
+  padding-top: 1.5rem; }
+  .ts-profile:hover {
+    cursor: pointer; }
+  .ts-profile .profile-img {
+    display: block;
+    float: left; }
+    .ts-profile .profile-img img {
+      width: 65px;
+      height: 65px;
+      border: 3px solid #fff;
+      border-radius: 100px;
+      box-shadow: 2px 3px 2px 0 #d2d2d2; }
+  .ts-profile .profile-info {
+    display: block;
+    float: left;
+    padding: 15px 0 0 20px; }
+    .ts-profile .profile-info h4 {
+      font-size: 18px;
+      color: #000;
+      margin: 0; }
+    .ts-profile .profile-info span {
+      font-size: 14px;
+      color: #838383; }
+  .ts-profile .profile-info-popover {
+    display: none; }
+  .ts-profile:hover .profile-info-popover {
+    position: absolute;
+    top: 110px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    font-size: 12px;
+    display: block;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 13px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 4px 13px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 4px 5px -5px rgba(0, 0, 0, 0.5);
+    animation: fadein 0.5s;
+    -moz-animation: fadein 0.5s;
+    /* Firefox */
+    -webkit-animation: fadein 0.5s;
+    /* Safari and Chrome */
+    -o-animation: fadein 0.5s;
+    /* Opera */ }
+    .ts-profile:hover .profile-info-popover:before {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #f0f0f0;
+      border-top: 1px solid #bfbfbf;
+      border-right: 0px solid #bfbfbf;
+      border-bottom: 0px solid #bfbfbf;
+      border-left: 1px solid #bfbfbf;
+      top: -11px;
+      left: 50%;
+      margin-left: -15px;
+      content: '';
+      transform: rotate(45deg); }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.ts-newTicket {
+  display: block;
+  padding-top: 2.2rem; }
+  .ts-newTicket button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit; }
+    .ts-newTicket button.learn-more {
+      width: 12rem;
+      height: auto; }
+      .ts-newTicket button.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #00a4ef;
+        border-radius: 1.625rem; }
+        .ts-newTicket button.learn-more .circle .icon {
+          transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: #fff; }
+          .ts-newTicket button.learn-more .circle .icon.arrow {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            background: none; }
+            .ts-newTicket button.learn-more .circle .icon.arrow::before {
+              position: absolute;
+              content: '';
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid #fff;
+              border-right: 0.125rem solid #fff;
+              transform: rotate(45deg); }
+      .ts-newTicket button.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.6rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #000;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid #00a4ef;
+        border-left: none;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 30px; }
+    .ts-newTicket button:hover .circle {
+      width: 100%; }
+      .ts-newTicket button:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(1rem, 0); }
+    .ts-newTicket button:hover .button-text {
+      color: #fff; }
+
+.ts-ticketMenu {
+  display: block;
+  padding-top: 2rem; }
+  .ts-ticketMenu ul {
+    padding: 0;
+    margin: 0;
+    transform: rotate(-180deg);
+    float: right; }
+    .ts-ticketMenu ul li {
+      margin: 0 5px 0 0;
+      padding: 0 50px 0 0;
+      list-style-type: none;
+      display: inline;
+      float: right;
+      transform: rotate(-180deg); }
+      .ts-ticketMenu ul li:hover, .ts-ticketMenu ul li.active {
+        cursor: pointer; }
+        .ts-ticketMenu ul li:hover .ts-catIcon, .ts-ticketMenu ul li.active .ts-catIcon {
+          background-color: #82b541;
+          transition: ease 0.3s; }
+          .ts-ticketMenu ul li:hover .ts-catIcon span, .ts-ticketMenu ul li.active .ts-catIcon span {
+            color: #fff;
+            transition: ease 0.3s; }
+        .ts-ticketMenu ul li:hover .ts-catName span:first-child, .ts-ticketMenu ul li.active .ts-catName span:first-child {
+          color: #00a4ef;
+          transition: ease 0.3s; }
+      .ts-ticketMenu ul li:last-child {
+        margin-right: 0;
+        padding-right: 0; }
+      .ts-ticketMenu ul li .ts-catIcon {
+        background-color: #e6e6e6;
+        transition: ease 0.3s;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        float: left;
+        padding: 7px 0 0 8px; }
+        .ts-ticketMenu ul li .ts-catIcon span {
+          font-size: 45px; }
+      .ts-ticketMenu ul li .ts-catName {
+        float: left;
+        padding-left: 15px;
+        margin-top: -8px; }
+        .ts-ticketMenu ul li .ts-catName span:first-child {
+          font-size: 40px;
+          font-weight: 600;
+          display: block; }
+        .ts-ticketMenu ul li .ts-catName span:last-child {
+          font-size: 14px;
+          font-weight: normal;
+          margin-top: -10px;
+          display: block;
+          color: #838383; }
+
+.ts-ticket-search {
+  position: relative;
+  margin: 40px 0 15px 0; }
+  .ts-ticket-search input[type=text] {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 14px;
+    padding: 5px 15px 5px 35px;
+    outline: none;
+    width: 100%; }
+  .ts-ticket-search span.lodur-icon-search {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-size: 20px;
+    color: #000000; }
+
+.ts-ticket-list {
+  font-size: 14px; }
+  .ts-ticket-list thead tr th img {
+    margin-top: -3px; }
+  .ts-ticket-list td, .ts-ticket-list th {
+    padding: 8px; }
+  .ts-ticket-list th:first-child {
+    width: 100px;
+    text-align: center;
+    padding-right: 40px; }
+  .ts-ticket-list th:last-child {
+    width: 130px; }
+  .ts-ticket-list th:last-child, .ts-ticket-list th:nth-child(3) {
+    text-align: center; }
+  .ts-ticket-list td:last-child, .ts-ticket-list td:nth-child(3) {
+    text-align: center; }
+  .ts-ticket-list .ts-statBtn {
+    padding: 3px 6px;
+    width: 80px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto; }
+
+.ts-ticket-filter select {
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid #d8dcde;
+  border-top: 1px solid #d8dcde;
+  padding: 5px 0 8px 0;
+  color: #000;
+  width: 100%;
+  outline: none;
+  margin-bottom: 10px; }
+
+.ts-ticket-filter ul {
+  margin: 0;
+  padding: 0; }
+  .ts-ticket-filter ul li {
+    margin: 0;
+    padding: 5px 10px;
+    list-style-type: none;
+    display: flex; }
+    .ts-ticket-filter ul li:hover {
+      background-color: #f0f0f0;
+      transition: ease 0.25s;
+      cursor: pointer; }
+    .ts-ticket-filter ul li span.ticketStat {
+      border-radius: 3px;
+      height: 15px;
+      text-align: center;
+      line-height: 14px;
+      width: 15px;
+      display: inline-block;
+      font-size: 12px;
+      margin-right: 10px;
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: #fff; }
+    .ts-ticket-filter ul li span.ticketName {
+      font-size: 14px;
+      font-weight: normal;
+      color: #000;
+      display: block; }
+    .ts-ticket-filter ul li span.ticketMeta {
+      font-size: 12px;
+      font-weight: normal;
+      color: #838383;
+      margin-bottom: 10px; }
+
+.green {
+  background-color: #82b541; }
+
+.orange {
+  background-color: #fd8308; }
+
+.red {
+  background-color: #ff0000; }
+
+.blue {
+  background-color: #009cff; }
+
+.ts-answer-container .ticket-title {
+  display: flex;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 8px 0.6px;
+  background-repeat: repeat-x; }
+  .ts-answer-container .ticket-title .ts-catIcon {
+    background-color: #e6e6e6;
+    transition: ease 0.3s;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    float: left;
+    padding: 7px 0 0 8px; }
+    .ts-answer-container .ticket-title .ts-catIcon span {
+      font-size: 45px; }
+  .ts-answer-container .ticket-title .ts-ticketName {
+    float: left;
+    padding-left: 15px;
+    padding-top: 16px; }
+    .ts-answer-container .ticket-title .ts-ticketName h1 {
+      font-size: 18px;
+      line-height: 5px; }
+    .ts-answer-container .ticket-title .ts-ticketName span.ticketMeta {
+      font-size: 12px;
+      font-weight: normal;
+      color: #838383;
+      margin-bottom: 10px; }
+
+.user_avatar {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+  .user_avatar img {
+    width: 100%;
+    height: 100%; }
+
+.ticket-thread {
+  display: block; }
+  .ticket-thread .create_new_comment {
+    width: 100%;
+    padding: 20px 0; }
+    .ticket-thread .create_new_comment .input_comment {
+      display: flex;
+      float: left;
+      vertical-align: middle;
+      margin-left: 10px;
+      width: calc(100% - 50px);
+      padding-top: 10px; }
+      .ticket-thread .create_new_comment .input_comment ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        position: absolute;
+        right: 16px; }
+        .ticket-thread .create_new_comment .input_comment ul li {
+          display: inline-block;
+          list-style-type: none;
+          margin-right: 5px; }
+          .ticket-thread .create_new_comment .input_comment ul li a {
+            display: block;
+            padding: 6px 10px;
+            height: 35px;
+            width: 35px;
+            border-radius: 50%;
+            color: #009cff; }
+            .ticket-thread .create_new_comment .input_comment ul li a:hover {
+              color: #000;
+              text-decoration: none; }
+      .ticket-thread .create_new_comment .input_comment .ts-comment-field {
+        width: 100%;
+        font-weight: 300;
+        padding: 10px 10px 50px 10px;
+        border: none;
+        border: 2px solid #f2f2f2; }
+        .ticket-thread .create_new_comment .input_comment .ts-comment-field:focus {
+          outline: none;
+          border: 2px solid #e6e6e6; }
+  .ticket-thread .create_new_comment .new_comment_btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding-left: 50px; }
+    .ticket-thread .create_new_comment .new_comment_btn button.lodurMobile-Btn--blue {
+      background-color: #0d9ed6;
+      border-color: #0d9ed6;
+      padding: 5px 15px;
+      font-size: 14px; }
+      .ticket-thread .create_new_comment .new_comment_btn button.lodurMobile-Btn--blue:hover {
+        background-color: #009cff; }
+  .ticket-thread .new_comment {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    border-top: 1px solid #e6e6e6; }
+    .ticket-thread .new_comment .user_comment {
+      list-style-type: none;
+      padding-left: 0; }
+    .ticket-thread .new_comment .comment_body {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(100% - 75px);
+      min-height: 65px;
+      margin-left: 20px;
+      padding: 5px 10px 10px 0;
+      font-size: .9rem;
+      color: #555;
+      background-color: #FFF;
+      border-bottom: 2px solid #f2f2f2; }
+      .ticket-thread .new_comment .comment_body .commenterName {
+        display: block; }
+        .ticket-thread .new_comment .comment_body .commenterName a {
+          color: #0d9ed6;
+          font-weight: 600; }
+          .ticket-thread .new_comment .comment_body .commenterName a:hover {
+            color: #555;
+            text-decoration: none;
+            cursor: pointer; }
+      .ticket-thread .new_comment .comment_body .replied_to {
+        margin: 5px 0px 10px 0px;
+        background-color: #f2f2f2;
+        border-bottom: 2px solid #f2f2f2;
+        border-radius: 5px; }
+        .ticket-thread .new_comment .comment_body .replied_to p {
+          padding: 5px 10px; }
+        .ticket-thread .new_comment .comment_body .replied_to span {
+          color: #555;
+          font-weight: 600;
+          margin-right: 5px; }
+    .ticket-thread .new_comment .comment_toolbar {
+      width: 100%;
+      margin-bottom: 5px; }
+      .ticket-thread .new_comment .comment_toolbar ul {
+        list-style-type: none;
+        padding: 0;
+        font-size: 0; }
+        .ticket-thread .new_comment .comment_toolbar ul li {
+          display: inline-block;
+          padding: 5px 10px 5px 0;
+          font-size: 12px;
+          color: #838383; }
+          .ticket-thread .new_comment .comment_toolbar ul li:hover {
+            cursor: pointer; }
+      .ticket-thread .new_comment .comment_toolbar .comment_details {
+        display: inline-block;
+        vertical-align: middle;
+        width: 70%;
+        text-align: left; }
+      .ticket-thread .new_comment .comment_toolbar .comment_tools {
+        display: inline-block;
+        vertical-align: middle;
+        width: 30%;
+        text-align: right; }
+        .ticket-thread .new_comment .comment_toolbar .comment_tools li:hover {
+          color: #CCC; }
+    .ticket-thread .new_comment .user:hover {
+      color: #6495ED;
+      text-decoration: underline; }
+    .ticket-thread .new_comment .love:hover {
+      color: #FF6347; }
+
+.ts-modal {
+  max-width: 700px; }
+  .ts-modal .modal-header {
+    background-color: #0d9ed6;
+    color: #fff;
+    padding: 0.5rem 1rem; }
+    .ts-modal .modal-header .close {
+      text-shadow: none;
+      opacity: 1;
+      color: #fff; }
+  .ts-modal .newTicketInfo {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px; }
+    .ts-modal .newTicketInfo input.ts-ticket-subject {
+      width: 70%;
+      border: 2px solid #f2f2f2;
+      padding: 5px 10px;
+      font-weight: 300; }
+      .ts-modal .newTicketInfo input.ts-ticket-subject:focus {
+        border: 2px solid #e6e6e6;
+        outline: none; }
+    .ts-modal .newTicketInfo select.ts-ticket-priority {
+      border: 2px solid #f2f2f2;
+      width: 29.2899999999999%;
+      padding: 5px 10px;
+      font-weight: 300; }
+      .ts-modal .newTicketInfo select.ts-ticket-priority:focus {
+        border: 2px solid #e6e6e6;
+        outline: none; }
+  .ts-modal .create_new_comment .input_comment {
+    flex-flow: wrap; }
+    .ts-modal .create_new_comment .input_comment ul {
+      position: inherit; }
+
+.ts-rating-feedback .rating {
+  width: 265px;
+  margin: 135px auto 0;
+  position: relative;
+  direction: rtl;
+  text-align: center; }
+  .ts-rating-feedback .rating .emo {
+    position: absolute;
+    font-family: "lodur-minimalistic-icons";
+    color: #0d9ed6;
+    font-size: 100px;
+    bottom: 100%;
+    left: 34%;
+    display: inline-block;
+    direction: ltr; }
+    .ts-rating-feedback .rating .emo:after {
+      content: '\3c'; }
+  .ts-rating-feedback .rating input {
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 5;
+    margin-right: -35px;
+    top: 10px; }
+    .ts-rating-feedback .rating input:nth-of-type(4):checked ~ .emo:after, .ts-rating-feedback .rating input:nth-of-type(4):hover ~ .emo:after, .ts-rating-feedback .rating input:nth-of-type(3):checked ~ .emo:after, .ts-rating-feedback .rating input:nth-of-type(3):hover ~ .emo:after {
+      content: '\3b'; }
+    .ts-rating-feedback .rating input:nth-of-type(2):checked ~ .emo:after, .ts-rating-feedback .rating input:nth-of-type(2):hover ~ .emo:after {
+      content: '\e955'; }
+    .ts-rating-feedback .rating input:nth-of-type(1):checked ~ .emo:after, .ts-rating-feedback .rating input:nth-of-type(1):hover ~ .emo:after {
+      content: '\3a'; }
+    .ts-rating-feedback .rating input:nth-of-type(1) {
+      right: 50px; }
+    .ts-rating-feedback .rating input:nth-of-type(2) {
+      right: 100px; }
+    .ts-rating-feedback .rating input:nth-of-type(3) {
+      right: 150px; }
+    .ts-rating-feedback .rating input:nth-of-type(4) {
+      right: 200px; }
+    .ts-rating-feedback .rating input:nth-of-type(5) {
+      right: 250px; }
+    .ts-rating-feedback .rating input:nth-of-type(6) {
+      right: 300px; }
+    .ts-rating-feedback .rating input:checked ~ .star:after, .ts-rating-feedback .rating input:hover ~ .star:after {
+      content: '\e953'; }
+  .ts-rating-feedback .rating .star {
+    display: inline-block;
+    font-family: "lodur-minimalistic-icons";
+    font-size: 42px;
+    color: #FBB202;
+    cursor: pointer;
+    margin: 3px; }
+    .ts-rating-feedback .rating .star:after {
+      content: '\e954'; }
+    .ts-rating-feedback .rating .star:hover ~ .star:after, .ts-rating-feedback .rating .star:hover:after {
+      content: '\e953'; }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1225px) {
+  .ts-newTicket button.learn-more {
+    width: 9.5rem; }
+  .ts-newTicket button.learn-more .button-text {
+    font-size: 14px; }
+  .ts-ticketMenu ul li {
+    padding: 0 20px 0 0; }
+    .ts-ticketMenu ul li .ts-catIcon {
+      height: 55px;
+      width: 55px;
+      padding: 6px 0 0 7px; }
+      .ts-ticketMenu ul li .ts-catIcon span {
+        font-size: 42px; }
+    .ts-ticketMenu ul li .ts-catName {
+      padding-left: 10px;
+      padding-top: 4px; }
+      .ts-ticketMenu ul li .ts-catName span:first-child {
+        font-size: 32px; }
+      .ts-ticketMenu ul li .ts-catName span:last-child {
+        font-size: 12px; } }
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .ts-profile .profile-img {
+    width: 100%;
+    text-align: center; }
+  .ts-profile .profile-info {
+    text-align: center;
+    width: 100%;
+    padding-left: 0; } }
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/

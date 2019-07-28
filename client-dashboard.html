@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Client Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+<body>
+                
+    
+    <div class="ts-container">
+        <div class="row">
+            <div class="col-3 ts-profile">
+                <div class="profile-img">
+                    <img src="assets/image/profile.jpg" alt="">
+                </div>
+                <div class="profile-info">
+                    <h4>John Doe</h4>
+                    <span>Tickets created (20)</span>
+                </div>
+            </div>
+            <div class="col-2 ts-newTicket">
+                <button class="learn-more">
+                    <div class="circle">
+                    <span class="icon arrow"></span>
+                    </div>
+                    <p class="button-text">Ticket</p>
+                </button>
+            </div>
+            <div class="col-7 ts-ticketMenu">
+                <ul>
+                    <li class="active">
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-open"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>5</span>
+                            <span>Offen</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-pending"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>95</span>
+                            <span>Pendent</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-answered"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>12</span>
+                            <span>Beantwortet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-closed"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>02</span>
+                            <span>Geschlossen</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="ts-ticket-search">
+                    <form action="">
+                        <input type="text" placeholder="Search Ticket...">
+                        <span class="lodur-icon-search"></span>
+                    </form>    
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="ts-ticket-list">
+                    <table class="table">
+                        <thead class="thead-default">
+                          <tr>
+                            <th>ID&nbsp;&nbsp;<img src="assets/image/sort.gif"></th>
+                            <th>Subject&nbsp;&nbsp;<img src="assets/image/sort.gif"></th>
+                            <th>Replies&nbsp;&nbsp;<img src="assets/image/sort.gif"></th>
+                            <th>Last Reply&nbsp;&nbsp;<img src="assets/image/sort.gif"></th>
+                            <th>Posted&nbsp;&nbsp;<img src="assets/image/sort.gif"></th>
+                            <th>Status&nbsp;&nbsp;<img src="assets/image/sort.gif"></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">#310</th>
+                            <td>Hausdienst design amends</td>
+                            <td>2</td>
+                            <td>Open</td>
+                            <td>10 minutes ago</td>
+                            <td><div class="ts-statBtn green">Normal</div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">#11</th>
+                            <td>Ticket system draft</td>
+                            <td>4</td>
+                            <td>2 days, 3 hours ago</td>
+                            <td>April 10</td>
+                            <td><div class="ts-statBtn red">High</div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">#65</th>
+                            <td>Iconset update</td>
+                            <td>9</td>
+                            <td>2 days, 3 hours ago</td>
+                            <td>April 10</td>
+                            <td><div class="ts-statBtn orange">Moderate</div></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">#9</th>
+                            <td>Platform update</td>
+                            <td>1</td>
+                            <td>2 days, 3 hours ago</td>
+                            <td>April 10</td>
+                            <td><div class="ts-statBtn green">Normal</div></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#117</th>
+                            <td>Kuche amends for developer</td>
+                            <td>3</td>
+                            <td>2 days ago</td>
+                            <td>March 18</td>
+                            <td><div class="ts-statBtn red">High</div></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Just for POC -->    
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            
+        });
+
+    </script>
+
+</body>
+</html>

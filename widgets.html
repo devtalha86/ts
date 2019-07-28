@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ticket Thread</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+<body>
+                
+    
+    <div class="ts-container">
+        <div class="row">
+            <div class="col-3 ts-profile">
+                <div class="profile-img">
+                    <img src="assets/image/profile.jpg" alt="">
+                </div>
+                <div class="profile-info">
+                    <h4>John Doe</h4>
+                    <span>Tickets created (20)</span>
+                </div>
+                <div class="profile-info-popover">
+                    <table>
+                        <tr>
+                            <th>Org</th>
+                            <td>&nbsp;:&nbsp;&nbsp;</td>
+                            <td>Semicolon</td>
+                        </tr>
+                        <tr>
+                            <th>Role&nbsp;</th>
+                            <td>&nbsp;:&nbsp;&nbsp;</td>
+                            <td>Administrator</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>&nbsp;:&nbsp;&nbsp;</td>
+                            <td>talha.sayel@gmail.com</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-2 ts-newTicket">
+                <button class="learn-more" data-toggle="modal" data-target="#AddNewTicket">
+                    <div class="circle">
+                    <span class="icon arrow"></span>
+                    </div>
+                    <p class="button-text">Ticket</p>
+                </button>
+            </div>
+            <div class="col-7 ts-ticketMenu">
+                <ul>
+                    <li class="active">
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-open"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>5</span>
+                            <span>Offen</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-pending"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>95</span>
+                            <span>Pendent</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-answered"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>12</span>
+                            <span>Beantwortet</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-closed"></span>
+                        </div>
+                        <div class="ts-catName">
+                            <span>02</span>
+                            <span>Geschlossen</span>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="ts-search-ticket">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="ts-ticket-search">
+                    <form action="">
+                        <input type="text" placeholder="Search Ticket...">
+                        <span class="lodur-icon-search"></span>
+                    </form>    
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="ts-ticket-filter">
+                    <select name="Status" id="">
+                        <option value="Beantwortet">Beantwortet</option>
+                        <option value="Pendent">Pendent</option>
+                        <option value="Offen">Offen</option>
+                    </select>
+                    <ul>
+                        <li>
+                            <span class="ticketStat blue">P</span>
+                            <div class="ticket-list">
+                                <span class="ticketName">Hausdienst and Resourcebildung design changes</span>
+                                <span class="ticketMeta">Apr 05 12:29 . 3 comments</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ticketStat green">S</span>
+                            <div class="ticket-list">
+                                <span class="ticketName">Hausdienst and Resourcebildung design changes</span>
+                                <span class="ticketMeta">Apr 05 12:29 . 3 comments</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ticketStat blue">O</span>
+                            <div class="ticket-list">
+                                <span class="ticketName">Hausdienst and Resourcebildung design changes</span>
+                                <span class="ticketMeta">Apr 05 12:29 . 3 comments</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="ticketStat orange">P</span>
+                            <div class="ticket-list">
+                                <span class="ticketName">Hausdienst and Resourcebildung design changes</span>
+                                <span class="ticketMeta">Apr 05 12:29 . 3 comments</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-9">
+                <div class="ts-answer-container">
+                    <div class="ticket-title">
+                        <div class="ts-catIcon">
+                            <span class="lodur-icon-ticket-closed"></span>
+                        </div>
+                        <div class="ts-ticketName">
+                            <h1>Hausdienst design amends</h1>
+                            <span class="ticketMeta">Apr 15 12:29 Talha Sayel&nbsp;-&nbsp;devtalha86@gmail.com (change) from Lodur Support</span>
+                        </div>
+                    </div>
+                    <div class="ticket-thread">
+                        <div class="create_new_comment">
+                
+                            <!-- current #{user} avatar -->
+                            <div class="user_avatar">
+                                <img src="assets/image/1.jpg">
+                            </div>
+                            <!-- the input field -->
+                            <div class="input_comment">
+                                <input class="ts-comment-field" type="text" placeholder="Join the conversation..">
+                                <ul>
+                                    <li><a href="#"><span class="lodur-icon-attachment"></span></a></li>
+                                </ul>
+                            </div>
+                            <div class="new_comment_btn">
+                                <button type="button" class="lodurMobile-Btn--blue btn btn-primary">Senden</button>
+                                <button type="button" class="lodurMobile-Btn--blue btn btn-primary" data-toggle="modal" data-target="#feedbackWidget">Schliessen</button>
+                            </div>
+                            <!-- Modal Ticket Close Feedback -->
+                            
+                            <div class="modal fade" id="feedbackWidget" tabindex="-1" role="dialog" aria-labelledby="feedbackWidget" aria-hidden="true">
+                                <div class="modal-dialog ts-modal ts-rating-feedback modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Rate The Answer</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="rating">
+                                            <input type="radio" name="star" checked/><span class="star"> </span>
+                                            <input type="radio" name="star"/><span class="star"> </span>
+                                            <input type="radio" name="star"/><span class="star"> </span>
+                                            <input type="radio" name="star"/><span class="star"> </span>
+                                            <input type="radio" name="star"/><span class="star"> </span><span class="emo"> </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <!-- Modal Ticket Close Feedback End -->
+                        </div>
+                
+                
+                        <!-- new comment -->
+                        <div class="new_comment">
+                
+                            <!-- build comment -->
+                            <ul class="user_comment">
+                
+                                <!-- current #{user} avatar -->
+                                <div class="user_avatar">
+                                    <img src="assets/image/2.jpg">
+                                </div>
+                                <!-- the comment body -->
+                                <div class="comment_body">
+                                    <div class="commenterName"><a href="#">Nils Wahlstroem</a></div>
+                                    <!-- comments toolbar -->
+                                    <div class="comment_toolbar">
+                
+                                        <!-- inc. date and time -->
+                                        <div class="comment_details">
+                                            <ul>
+                                                <li><span class="lodur-icon-clock"></span> 14:52</li>
+                                                <li><span class="lodur-icon-calendar"></span> 04/01/2015</li>
+                                                <li><span class="lodur-icon-reply"></span>&nbsp;Reply</li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <p>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p>
+                                    <div class="ts-answer-attachments">
+                                        <ul>
+                                            <li><a href="#">attachment-1.jpg</a></li>
+                                            <li><a href="#">somefile.docx</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                
+                                
+                
+                                <!-- start user replies -->
+                            <li>
+                                
+                                <!-- current #{user} avatar -->
+                                <div class="user_avatar">
+                                    <img src="assets/image/3.jpg">
+                                </div>
+                                <!-- the comment body -->
+                                <div class="comment_body">
+                                    <div class="commenterName"><a href="#">Talha Sayel</a></div>
+                                    <!-- comments toolbar -->
+                                    <div class="comment_toolbar">
+                
+                                        <!-- inc. date and time -->
+                                        <div class="comment_details">
+                                            <ul>
+                                                <li><span class="lodur-icon-clock"></span> 14:52</li>
+                                                <li><span class="lodur-icon-calendar"></span> 04/01/2015</li>
+                                                <li><span class="lodur-icon-reply"></span>&nbsp;Reply</li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="replied_to"><p><span class="user">Nils Wahlstroem:</span>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p></div>That's exactly what I was thinking!
+                                </div>                
+                            </li>
+                
+                                <!-- start user replies -->
+                            <li>
+                                
+                                <!-- current #{user} avatar -->
+                                <div class="user_avatar">
+                                    <img src="assets/image/4.jpg">
+                                </div>
+                                <!-- the comment body -->
+                                <div class="comment_body">
+                                    <div class="commenterName"><a href="#">Michael Jackson</a></div>
+                                    <!-- comments toolbar -->
+                                    <div class="comment_toolbar">
+                
+                                        <!-- inc. date and time -->
+                                        <div class="comment_details">
+                                            <ul>
+                                                <li><span class="lodur-icon-clock"></span> 14:52</li>
+                                                <li><span class="lodur-icon-calendar"></span> 04/01/2015</li>
+                                                <li><span class="lodur-icon-reply"></span>&nbsp;Reply</li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="replied_to"><p><span class="user">Nils Wahlstroem:</span>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p></div>Finally someone who actually gets it!
+                                </div>
+                
+                            </li>
+                
+                            </ul>
+                
+                        </div>
+                
+                <!-- new comment -->
+                        <div class="new_comment">
+                
+                            <!-- build comment -->
+                            <ul class="user_comment">
+                
+                                <!-- current #{user} avatar -->
+                                <div class="user_avatar">
+                                    <img src="assets/image/5.jpg">
+                                </div>
+                                <!-- the comment body -->
+                                <div class="comment_body">
+                                    <div class="commenterName"><a href="#">Sarah Walkman</a></div>
+                                    <!-- comments toolbar -->
+                                    <div class="comment_toolbar">
+                
+                                        <!-- inc. date and time -->
+                                        <div class="comment_details">
+                                            <ul>
+                                                <li><span class="lodur-icon-clock"></span> 14:52</li>
+                                                <li><span class="lodur-icon-calendar"></span> 04/01/2015</li>
+                                                <li><span class="lodur-icon-reply"></span>&nbsp;Reply</li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <p>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.</p>
+                                </div>
+                
+                                
+                
+                                <!-- start user replies -->
+                            <li>
+                                
+                                <!-- current #{user} avatar -->
+                                <div class="user_avatar">
+                                    <img src="assets/image/4.jpg">
+                                </div>
+                                <!-- the comment body -->
+                                <div class="comment_body">
+                                    <div class="commenterName"><a href="#">Michael Jackson</a></div>
+                                    <!-- comments toolbar -->
+                                    <div class="comment_toolbar">
+                
+                                        <!-- inc. date and time -->
+                                        <div class="comment_details">
+                                            <ul>
+                                                <li><span class="lodur-icon-clock"></span> 14:52</li>
+                                                <li><span class="lodur-icon-calendar"></span> 04/01/2015</li>
+                                                <li><span class="lodur-icon-reply"></span>&nbsp;Reply</li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="replied_to"><p><span class="user">Sarah Walkman:</span>Gastropub cardigan jean shorts, kogi Godard PBR&B lo-fi locavore. Organic chillwave vinyl Neutra. Bushwick Helvetica cred freegan, crucifix Godard craft beer deep v mixtape cornhole Truffaut master cleanse pour-over Odd Future beard. Portland polaroid iPhone.
+
+                                    </p></div>I'm tired, does anybody know a good place to buy extra strength coffee?
+
+                                </div>
+                
+                                
+                
+                
+                            </li>
+                
+                            </ul>
+                
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal Create New Ticket -->
+<div class="modal fade" id="AddNewTicket" tabindex="-1" role="dialog" aria-labelledby="AddNewTicket" aria-hidden="true">
+    <div class="modal-dialog ts-modal modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">New Ticket</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="ticket-thread">
+                    <div class="create_new_comment">
+                        <!-- current #{user} avatar -->
+                        <div class="user_avatar">
+                            <img src="assets/image/4.jpg">
+                        </div>
+                        <!-- the input field -->
+                        <div class="input_comment">
+                            <div class="newTicketInfo">
+                                <input class="ts-ticket-subject"type="text" placeholder="Subject/Title">
+                                <select class="ts-ticket-priority"ame="" id="">
+                                    <option value="Priority">Priority 1</option>
+                                    <option value="Priority">Priority 2</option>
+                                    <option value="Priority">Priority 3</option>
+                                </select>
+                            </div>
+                            <input class="ts-comment-field" type="text" placeholder="Join the conversation..">
+                            <ul>
+                                <li><a href="#"><span class="lodur-icon-attachment"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="new_comment_btn">
+                            <button type="button" class="lodurMobile-Btn--blue btn btn-primary">Senden</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Create New Ticket End -->
+        
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Just for POC -->    
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            
+        });
+
+    </script>
+
+</body>
+</html>
