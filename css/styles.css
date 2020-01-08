@@ -927,7 +927,7 @@ html, body {
     float: right; }
     .ts-ticketMenu ul li {
       margin: 0 5px 0 0;
-      padding: 0 50px 0 0;
+      padding: 0 30px 0 0;
       list-style-type: none;
       display: inline;
       float: right;
@@ -996,9 +996,8 @@ html, body {
   .ts-ticket-list td, .ts-ticket-list th {
     padding: 8px; }
   .ts-ticket-list th:first-child {
-    width: 100px;
-    text-align: center;
-    padding-right: 40px; }
+    width: 90px;
+    text-align: left; }
   .ts-ticket-list th:last-child {
     width: 130px; }
   .ts-ticket-list th:last-child, .ts-ticket-list th:nth-child(3) {
@@ -1343,7 +1342,7 @@ html, body {
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1225px) {
+@media (min-width: 768px) and (max-width: 1120px) {
   .ts-newTicket button.learn-more {
     width: 9.5rem; }
   .ts-newTicket button.learn-more .button-text {
@@ -1372,15 +1371,6 @@ html, body {
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
 */
-@media (min-width: 481px) and (max-width: 768px) {
-  .ts-profile .profile-img {
-    width: 100%;
-    text-align: center; }
-  .ts-profile .profile-info {
-    text-align: center;
-    width: 100%;
-    padding-left: 0; } }
-
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
